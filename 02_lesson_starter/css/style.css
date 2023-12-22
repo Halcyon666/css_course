@@ -1,0 +1,34 @@
+* {
+    font-family: monospace;
+}
+
+html {
+    color: blue;
+}
+
+input, button, select, textarea {
+    font: inherit;
+}
+
+h1, h2 {
+    background-color: aqua;
+}
+
+main {
+    font-size: 22px;
+}
+
+.gray {
+    color: gray;
+}
+/* do not use !important when u not familar with css */
+/* p {
+    color: limegreen!important;
+} */
+p {
+    color: red;
+}
+.highlight {
+    background-color: gold;
+    text-transform: uppercase;
+}
