@@ -17,6 +17,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -31,4 +32,32 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+}
+
+.absolute {
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.relative {
+  background-color: #f00;
+  position: relative;
+  top: 300px;
+  left: 100px;
+}
+
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  top: 100px;
+}
+
+.sticky {
+  background-color: #000;
+  position: sticky;
+  top: 0;
 }

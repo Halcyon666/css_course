@@ -10,7 +10,11 @@ input, button, select, textarea {
     font: inherit;
 }
 
-h1, h2 {
+/* h1, h2 {
+    background-color: aqua;
+} */
+/* this mean h2 inside h1, not select both h1 and h2 */
+h1 h2 {
     background-color: aqua;
 }
 
@@ -28,7 +32,15 @@ main {
 p {
     color: red;
 }
+
 .highlight {
     background-color: gold;
     text-transform: uppercase;
+}
+
+.my-label {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
 }

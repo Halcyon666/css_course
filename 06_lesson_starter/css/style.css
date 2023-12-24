@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 25%;
+    font-size: 2rem;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+ /*    text-transform: capitalize;
+    text-align: right; */
+    /* text-indent: 2em; */
+
+    /* line-height: 1.5; */
+    /* letter-spacing: 0.1em; */
+    /* word-spacing: 0.1em; */
+    /* font-weight: 900; */
+    /* font-style: italic; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Roboto', sans-serif;
+}
+

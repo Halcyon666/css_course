@@ -39,6 +39,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  /* adjust the element layer 1 to set the top of others */
   z-index: 1;
 }
 
