@@ -12,8 +12,8 @@ ol {
 }
 
 ul {
- list-style-type: square;
-   list-style-position: inside;
+  list-style-type: square;
+  list-style-position: inside;
   /* list-style-image: url('../images/checkmark.png'); */
   /* list-style: square url('../images/checkmark.png') inside; */
 
@@ -32,4 +32,3 @@ ul ::marker {
   font-size: 1em;
   content: "ONly $5 >> "
 }
-
