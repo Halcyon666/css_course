@@ -33,3 +33,86 @@ div {
   display: grid;
   place-content: center;
 }
+
+
+div:first-child {
+  background-color: dodgerblue;
+  /* 移动 */
+  /* transform: translateX(-50%); */
+  /* 旋转 */
+  /* transform: rotateX(180deg); */
+  /* 放大 缩小 */
+  /* transform: scaleX(120%); */
+  /* 边线倾斜 */
+  /* transform: skewX(-10deg); */
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+  /* transform: translateY(-2rem); */
+  /* transform: rotateY(180deg); */
+  /* transform: scaleY(120%); */
+  /* transform: skewY(10deg); */
+}
+
+div:last-child {
+  background-color: limegreen;
+  /* transform: translate(100%, -5rem); */
+  /* transform: rotate(135deg); */
+  /* transform: scale(50%, 50%); */
+  /* transform: skew(-10deg, -10deg); */
+}
+
+div:hover {
+  background-color: midnightblue;
+  /*   transition-property: background-colo, transform;
+  transition-duration: 2s, 3s;
+  transition-delay: 0.5s; 
+  transition-timing-function: linear;*/
+  /* transition: all 2s  .5s; */
+  transition: background-color 2s .5s, transform 3s .5s;
+}
+
+div:last-child:hover {
+  transform: rotate(180deg);
+}
+
+.animate {
+  /* animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 2; */
+  /* forward first time and reverse next time */
+  /* animation-direction: normal; */
+  /* When set to forwards, it means that the 
+  element will retain the computed values of
+   the last keyframe after the animation completes. 
+   In other words, the final state of 
+   the animation will be maintained */
+  /* animation-fill-mode: forwards; */
+
+  animation: 5s ease-in-out 1s 2 normal forwards slide;
+}
+
+
+@keyframes slide {
+
+  /* begin of the  animation */
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(300px) rotate(180deg);
+  }
+
+  66% {
+    transform: translateX(-300px) rotate(-180deg);
+  }
+
+  100% {
+    transform: translateX(0);
+    background-color: rebeccapurple;
+  }
+}

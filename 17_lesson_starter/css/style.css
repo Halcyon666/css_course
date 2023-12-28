@@ -9,12 +9,12 @@
 
 /* || GENERAL STYLES */
 body {
-  font: 1.5rem "Nunito", sans-serif;
-  min-height: 100vh;
   background-color: #475569;
   background-image: radial-gradient(whitesmoke, #475569);
   display: flex;
   flex-direction: column;
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
 
 }
 
@@ -23,14 +23,18 @@ main {
 
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   display: grid;
   place-content: center;
   grid-template-columns: 100%;
   text-align: center;
 }
 
-footer, header {
+footer,
+header {
   position: sticky;
   background-color: #1e293b;
   color: whitesmoke;
@@ -46,9 +50,9 @@ footer {
 
 nav {
   background-color: #fff;
+  border-bottom: 2px solid #000;
   color: #000;
   padding: 0.5rem;
-  border-bottom: 2px solid #000;
 }
 
 /* SMALL */
@@ -57,10 +61,11 @@ nav {
     background-color: green;
     background-image: radial-gradient(whitesmoke, green);
   }
+
   nav {
     display: none;
   }
-  
+
 }
 
 /* MEDIUM */
@@ -69,10 +74,11 @@ nav {
     background-color: gold;
     background-image: radial-gradient(whitesmoke, gold);
   }
+
   nav {
     display: none;
   }
-  
+
 }
 
 /* LARGE */
@@ -81,10 +87,11 @@ nav {
     background-color: firebrick;
     background-image: radial-gradient(whitesmoke, firebrick);
   }
+
   nav {
     display: none;
   }
-  
+
 }
 
 
@@ -94,10 +101,11 @@ nav {
     background-color: rebeccapurple;
     background-image: radial-gradient(whitesmoke, rebeccapurple);
   }
+
   nav {
     display: none;
   }
-  
+
 }
 
 /* MOBILE DEVICE LANDSCAPE */
@@ -106,11 +114,13 @@ nav {
     background-color: dodgerblue;
     background-image: radial-gradient(whitesmoke, dodgerblue);
   }
+
   nav {
     display: none;
   }
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 1.5rem;
   }
 }
-
